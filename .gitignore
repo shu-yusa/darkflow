@@ -1,3 +1,6 @@
+*~
+*.sw[po]
+.DS_Store
 
 # Python bytecode
 *.pyc
@@ -9,6 +12,7 @@ bin/
 sample_img/*.jpg
 !sample_img/sample_*.jpg
 sample_img/out/*
+my_samples
 
 # Annotated test results
 results/
@@ -19,6 +23,7 @@ tfnet/yolo/parse-history.txt
 tfnet/yolo/*.parsed
 *.txt
 !requirements*.txt
+!labels.txt
 *.pb
 /profile
 /test.py
@@ -26,6 +31,7 @@ tfnet/yolo/*.parsed
 # Built cython files
 darkflow/cython_utils/*.pyd
 darkflow/cython_utils/*.c
+*.so
 
 #egg-info
 darkflow.egg-info/
@@ -44,3 +50,14 @@ ckpt/*
 
 #pytest cache
 .cache/
+
+# datasets
+VOC2007
+H2FOOD_MINI
+
+# virtualenv
+env
+
+# saved model
+saved_model
+graph
